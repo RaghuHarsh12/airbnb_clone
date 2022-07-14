@@ -1,4 +1,3 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
 import Banner from '../Components/Banner'
 import Header from '../Components/Header'
@@ -7,15 +6,15 @@ import MediumCard from '../Components/MediumCard'
 import LargeCard from '../Components/LargeCard'
 import LargeBanner from '../assets/LargeBanner.jpeg'
 import Footer from '../Components/Footer'
-const Home: NextPage = ({ exploreData, cardData }) => {
+const Home =({ exploreData, cardData }) => {
   return (
     <div>
       <Head>
-        <title>AirBnB Clone</title>
+        <title>AirBnb Clone</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* header */}
-      <Header />
+      <Header placeholder={undefined} />
       {/* banner */}
       <Banner />
       <main className="mx-auto max-w-7xl px-8 sm:px-16">
